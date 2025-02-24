@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    background-color: #111;
+    color: white;
+}
+
+.header {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.topnav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.topnav a:hover {
+    background-color: #575757;
+}
+
+
+
+
