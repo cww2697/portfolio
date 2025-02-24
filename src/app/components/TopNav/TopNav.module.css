@@ -26,6 +26,7 @@
 
 .topnav a:hover {
     background-color: #575757;
+    border-radius: 15px;
 }
 
 

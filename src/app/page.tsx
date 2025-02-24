@@ -5,10 +5,7 @@ export default function Home() {
   return (
     <>
       <TopNav />
-      <div className={"contentContainer"}>
-
-        <p>This is a test</p>
-      </div>
+      <p> This is a test page</p>
       <Footer />
     </>
   );
