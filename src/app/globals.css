@@ -9,8 +9,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1a1a;
     --foreground: #ededed;
+    --nav-footer-background: #111;
+    --content-background: #4f4f4f;
+    --nav-footer-hover: #575757;
+    --nav-footer-active: #1E90FF;
+    --content-text-color: #ededed;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f0f0f0; /* Light gray background */
+    --foreground: #333; /* Dark text color */
+    --nav-footer-background: #fff; /* White header and footer */
+    --content-background: #ededed; /* Light gray content background */
+    --nav-footer-hover: #dcdcdc; /* Light gray hover color */
+    --nav-footer-active: #1E90FF; /* Keeping the active color the same */
+    --content-text-color: #333; /* Dark text color */
   }
 }
 
@@ -18,4 +35,27 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.contentContainer {
+  padding-top: 75px;
+  margin: auto;
+  width: 75%;
+  overflow-y : hidden;
+  background-color: var(--background);
+}
+
+.pageTitle {
+  padding-top: 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em; /* Adjust the font size for h1 */
+  margin: 0;
+}
+
+p {
+  font-size: 1em; /* Adjust the font size for p */
+  margin: 0;
 }
