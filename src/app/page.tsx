@@ -1,15 +1,12 @@
-import TopNav from "@/app/components/TopNav/TopNav";
-import Footer from "@/app/components/Footer/Footer";
+import "./globals.css";
+import About from "@/app/components/About/About";
 
 export default function Home() {
   return (
     <>
-      <TopNav />
-      <div className={"contentContainer"}>
-
-        <p>This is a test</p>
-      </div>
-      <Footer />
+        <div className="contentContainer">
+            <About />
+        </div>
     </>
   );
 }

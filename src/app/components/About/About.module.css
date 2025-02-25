@@ -1,0 +1,49 @@
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--background);
+    padding: 30px 20px 20px;
+}
+
+.imageColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.textColumn {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the start */
+    color: var(--content-text-color); /* Adjust text color as needed */
+}
+
+.textColumn h1, .textColumn p {
+    margin: 0; /* Ensure no margin collapse */
+    padding: 0; /* Ensure no padding affects layout */
+}
+
+.textColumn h1 {
+    text-align: center; /* Center the text horizontally */
+}
+
+.textColumn p {
+    text-align: left; /* Ensure the text is left-aligned */
+}
+
+@media (max-width: 768px) {
+    .intro {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+
+    .image {
+        max-width: 100%; /* Adjust image size for smaller screens */
+    }
+}
