@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './About.module.css'; // Import the CSS module
+import styles from './About.module.css';
+import Image from "next/image"; // Import the CSS module
 
 const About = () => {
     return (
@@ -9,14 +10,10 @@ const About = () => {
             </div>
             <section className={styles.intro}>
                 <div className={styles.imageColumn}>
-                    <img
-                        src="https://media.licdn.com/dms/image/v2/D5603AQH9xETNZ9i4hA/profile-displayphoto-shrink_800_800/B56ZTjx0GIGoAk-/0/1738988275335?e=1746057600&v=beta&t=0Y2PYisyBGKegUXX981DR8OlM2tCPUZDwy0rk4q4y6w"
-                        alt="Description of image"
-                        className={styles.image}
-                    />
+                    <Image src={"https://avatars.githubusercontent.com/u/19256987?s=800&v=4"} alt={"Profile Image"} width={800} height={800} className={styles.image}/>
                 </div>
                 <div className={styles.textColumn}>
-                    <p>As the current Team Leader of Software Development, I have had extensive hands-on experience with a variety of programming languages, including C, C++,Java, JavaScript, PHP, Python, SQL, and Swift.
+                    <p>As the current Team Leader of Software Development, I have had extensive hands-on experience with a variety of programming languages, including C, C++, Java, JavaScript, PHP, Python, SQL, and Swift.
                         I have successfully led high-priority projects such as a critical module redesign, which significantly improved user experience and data collection efficiency.
                         Additionally, I spearheaded the transition of a module to a new framework, enhancing system performance and maintainability.</p><br/>
                     <p>I place a high priority on maintaining application and data security, ensuring that our systems are robust and protected against potential threats.

@@ -20,6 +20,7 @@
     width: 100%;
     background-color: var(--nav-footer-background); /* Ensure it has a background color */
     z-index: 1000; /* Ensure it stays above other content */
+    opacity: 97%;
 }
 
 .topnav a {
@@ -29,11 +30,12 @@
     color: var(--foreground);
 }
 
-.topnav a:hover {
-    background-color: var(--nav-footer-hover);
-    border-radius: 15px;
+@media (hover: hover) and (pointer: fine) {
+    .topnav a:hover {
+        background-color: var(--nav-footer-hover);
+        border-radius: 15px;
+    }
 }
-
 .active {
     font-weight: bold;
     color: var(--nav-footer-active);

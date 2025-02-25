@@ -14,10 +14,9 @@ const TopNav = () => {
                 <Link href="/"><span className={pathname === '/' ? styles.active : ''}>About</span></Link>
                 <Link href="/projects"><span className={pathname === '/projects' ? styles.active : ''}>Projects</span></Link>
                 <Link href="/experience"><span className={pathname === '/experience' ? styles.active : ''}>Experience</span></Link>
-                <Link href="/contact"><span className={pathname === '/contact' ? styles.active : ''}>Contact</span></Link>
             </nav>
         </div>
     );
-}
+};
 
 export default TopNav

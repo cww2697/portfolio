@@ -37,3 +37,13 @@
 .textColumn p {
     text-align: left; /* Ensure the text is left-aligned */
 }
+
+@media (max-width: 768px) {
+    .intro {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+
+    .image {
+        max-width: 100%; /* Adjust image size for smaller screens */
+    }
+}
