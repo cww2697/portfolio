@@ -2,10 +2,8 @@ export default function Page() {
     return (
         <>
             <div className="contentContainer">
-                <section className="intro">
-                    <h1>Hello</h1>
-                    <p>Welcome to my portfolio!</p>
-                </section>
+                <h1>Experience Page</h1>
+                <p>This is the experience page</p>
             </div>
         </>
     );

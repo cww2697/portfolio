@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "New York Airport Annual Enplanements",
+    "desc": "This project was created for Introduction to Database Systems. The New York Airport Annual Enplanements project utilizes a LAMP stack, and JavaScript components to display New York state airport data from the Annual Enplanements in NYS Airports: Beginning 1997 dataset published by New York State.\nThe project utilizes many SQL commands to generate and import the dataset as well as display the data in the JavaScript Components.",
+    "languages": "HTML, JavaScript, SQL",
+    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/8707872e-9196-47c6-a633-c08c0cb6cf19_rw_600.png?h=a48f84baaed44bd7296486ba8d55597c",
+    "imageCredit": "Image from mariadb.org",
+    "githubUrl": "https://github.com/cww2697/Annual_Enplanements"
+  },
+  {
+    "id": 2,
+    "title": "Binary Sudoku Solver",
+    "desc": "This project was created for Introduction to Logic Programming. The Binary Sudoku Solver uses Clingo, MKAtoms, Python, and TKInter to solve a binary sudoku puzzle. TKInter is use for building the GUI and MKAtoms creates an atom for use in Clingo. Clingo (the chosen answer set solver) utilizes a list of rules in order to solve the puzzle.",
+    "languages": "Clingo, Python",
+    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/78468313-fbb4-4db4-803a-5a859356014d_rw_600.PNG?h=ab6388961a315424be7ec7bf0a78937d",
+    "githubUrl": "https://github.com/cww2697/Binary-Solver"
+  },
+  {
+    "id": 3,
+    "title": "Unix Find Utility",
+    "desc": "This project was created for Concepts of Operating Systems. This project uses C to recreate the Unix find utility. The implemented functionalities, and syntax for these functionalities are listed in this project's ReadMe file. \nThe project utilizes System headers (sys/types.h, sys/stat.h), dirent.h, and others to list out files that the user wants to find and any other arguments included. The output of the project will be a list of files matching the included arguments.",
+    "languages": "C",
+    "githubUrl": "https://github.com/cww2697/Find_Utility"
+  },
+  {
+    "id": 4,
+    "title": "Squeeze-It AI Agent",
+    "desc": "This project was created for Introduction to Logic Programming. The Binary Sudoku Solver uses Clingo, MKAtoms, Python, and TKInter to solve a binary sudoku puzzle. TKInter is use for building the GUI and MKAtoms creates an atom for use in Clingo. Clingo (the chosen answer set solver) utilizes a list of rules in order to solve the puzzle.",
+    "languages": "Python",
+    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/8fdaf166-39f0-4667-97e2-88ac0d576312_rw_600.PNG?h=e397342b31b3deb71609929cb0562646",
+    "githubUrl": "https://github.com/cww2697/SqueezeIT_AI"
+  },
+  {
+    "id": 5,
+    "title": "Los Angeles Traffic Prediction Bayesian Network",
+    "desc": "This project was created as an introduction to bayesian networks. The network was created using data obtained from NOAA, and The City of Los Angeles. This traffic prediction network simplifies many factors that play a role in traffic analysis. ",
+    "applications": "SAMIAM",
+    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/391b250e-7e10-4f00-9122-2f208802f139_rw_1920.png?h=70a450a8f5983d243c0ca87280f0662f",
+    "githubUrl": "https://github.com/cww2697/LA_Traffic_Bayesian_Net"
+  },
+  {
+    "id": 6,
+    "title": "Lubbock Covid-19 Information Chatbot",
+    "desc": "This project was created as an introduction to dialog agents. The chatbot provides information related to COVID-19 to a user. The information gathered for this agent was obtained from Texas Tech University, the City of Lubbock Health Department, and Texas Department of State Health Services. The agent was created in Google Dialogflow and Actions for Google Assistant to provide an excellent user experience, and can be utilized either in browser, through Dialogflow Phone Gateway, or on any Google Assistant enabled device.",
+    "applications": "Google Dialogflow, Actions for Google Assistant",
+    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/81d8c209-525e-4a00-9bee-cd2fe15202e0_rw_600.jpg?h=f6ba612bbccb1850d8212f84f49a8778",
+    "imageCredit": "Dialogflow is a registered trademark of Google, Inc.",
+    "githubUrl": "https://github.com/cww2697/Lubbock-Covid-Chatbot"
+  }
+
+]

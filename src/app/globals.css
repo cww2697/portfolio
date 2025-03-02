@@ -18,6 +18,7 @@
     --nav-footer-hover: #575757;
     --nav-footer-active: #1E90FF;
     --content-text-color: #ededed;
+    --link-color: #1E90FF;
   }
 }
 
@@ -30,6 +31,7 @@
     --nav-footer-hover: #dcdcdc; /* Light gray hover color */
     --nav-footer-active: #1E90FF; /* Keeping the active color the same */
     --content-text-color: #333; /* Dark text color */
+    --link-color: #1E90FF;
   }
 }
 
@@ -40,8 +42,8 @@ body {
 }
 
 .contentContainer {
-  padding-top: 75px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 75px;
   margin: auto;
   width: 75%;
   overflow-y : hidden;
