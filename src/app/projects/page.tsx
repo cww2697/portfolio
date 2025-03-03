@@ -1,11 +1,23 @@
 import ProjectCard from "@/app/components/ProjectCard/ProjectCard";
 import data from "../values/project.json";
 
+interface Project {
+    id: number;
+    title: string;
+    desc: string;
+    languages?: string[];
+    applications?: string[];
+    imageUrl?: string;
+    imageCredit?: string;
+    githubUrl?: string;
+}
+
+
 export default function Page() {
     return (
         <>
             <div className="contentContainer">
-                {data.map(project => (
+                {Object.values(data).map((project: Project) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
