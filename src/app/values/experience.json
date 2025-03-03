@@ -1,2 +1,31 @@
-[
-]
+{
+  "2" : {
+    "id": 2,
+    "position": "Team Leader of Software Development",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "descLine1": "I directed a team of skilled developers in the end-to-end process of designing, developing, and maintaining enterprise-level web applications, ensuring high performance, scalability, and reliability. This role involved close collaboration with project management to strategically plan and execute development projects, which encompassed defining database structures, establishing system architectural requirements, and ensuring all solutions adhered to best practices and industry standards. Furthermore, I provided detailed and actionable development insights to product management, offering technical expertise to guide the formulation of innovative product specifications that addressed market demands and user needs. My leadership not only fostered a productive and cohesive team environment but also contributed to the successful delivery of robust software solutions aligned with organizational goals.",
+    "startDate": "December 2023",
+    "endDate": "Current"
+  },
+  "1" : {
+    "id": 1,
+    "position": "Software Developer",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "descLine1": "I played a pivotal role in the development and maintenance of application features, leveraging the Model-View-Controller (MVC) design pattern to ensure a clear separation of concerns and establish a robust, scalable architectural foundation within a containerized environment. My responsibilities encompassed designing and optimizing SQL queries, enhancing system performance and operational efficiency through meticulous analysis and implementation. Additionally, I developed, implemented, and maintained REST API endpoints, ensuring seamless system integration and reliable functionality across various platforms.",
+    "descLine2": "This position demanded close collaboration with cross-functional teams, requiring effective communication and coordination to drive the software development lifecycle from initial planning and conceptualization to successful deployment. Through these efforts, I ensured alignment with project objectives while delivering high-quality, scalable, and efficient software solutions that met organizational goals.",
+    "startDate": "January 2021",
+    "endDate": "December 2023"
+  },
+  "0" : {
+    "id": 0,
+    "position": "Web Manager",
+    "company": "Amarillo Medical Oxygen",
+    "city": "Amarillo",
+    "state": "TX",
+    "descLine1": "I was responsible for developing and maintaining the company website, leveraging HTML, CSS, and JavaScript to create a responsive and visually engaging platform that prioritized user experience and accessibility across devices. Beyond development, I managed web advertisement campaigns through Google AdSense, optimizing ad placements and strategies to maximize user engagement and generate revenue growth. My responsibilities also included conducting comprehensive web traffic analysis using Google Analytics, where I monitored key performance indicators, identified trends, and provided actionable insights that informed website enhancements and strategic decisions. These efforts not only improved the website’s functionality and appeal but also supported broader organizational objectives by driving higher engagement and ensuring alignment with business goals.",
+    "startDate": "January 2020",
+    "endDate": "December 2020"
+  }
+}

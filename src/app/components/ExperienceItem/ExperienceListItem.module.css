@@ -1,0 +1,25 @@
+.experienceItemContainer {
+    padding: 0 20px 32px 20px;
+}
+.experienceItemContainer h1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.companyInfoContainer{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.companyInfoContainer h2 {
+    display: inline-block;
+    padding-inline-end: 16px;
+    font-size: 1.15em
+}
+.companyInfoContainer h3 {
+    font-size: 1.05em;
+    font-style: italic;
+}
+
+.experienceItemContainer p {
+    padding-top: 16px
+}
