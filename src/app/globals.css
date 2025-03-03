@@ -65,3 +65,11 @@ p {
   font-size: 1em; /* Adjust the font size for p */
   margin: 0;
 }
+
+
+@media (max-width: 768px) {
+  /* Adjust this value based on your mobile breakpoint */
+  .contentContainer {
+    width: 97%;
+  }
+}
