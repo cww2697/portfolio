@@ -1,6 +1,5 @@
 import styles from "./ProjectCard.module.css";
 import React from "react";
-import ListItem from "@/app/components/ListItem/ListItem";
 
 interface ProjectCardProps {
     title: string;

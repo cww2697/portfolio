@@ -1,12 +1,12 @@
 export default function Page() {
-    interface Experience {
+    /*interface Experience {
         id: number;
         position: string;
         company: string;
         desc: string;
         startDate: string;
         endDate: string;
-    }
+    }*/
 
     return (
         <>
