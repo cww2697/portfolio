@@ -17,7 +17,7 @@ export default function Page() {
     return (
         <>
             <div className="contentContainer">
-                {Object.values(data).map((project: Project) => (
+                {Object.values(data).reverse().map((project: Project) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
