@@ -20,30 +20,30 @@
 
 .textColumn {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: flex-start; /* Align items to the start */
-    color: var(--content-text-color); /* Adjust text color as needed */
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--content-text-color);
 }
 
 .textColumn h1, .textColumn p {
-    margin: 0; /* Ensure no margin collapse */
-    padding: 0; /* Ensure no padding affects layout */
+    margin: 0;
+    padding: 0;
 }
 
 .textColumn h1 {
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
 }
 
 .textColumn p {
-    text-align: left; /* Ensure the text is left-aligned */
+    text-align: left;
 }
 
 @media (max-width: 768px) {
     .intro {
-        grid-template-columns: 1fr; /* Switch to single column layout */
+        grid-template-columns: 1fr;
     }
 
     .image {
-        max-width: 100%; /* Adjust image size for smaller screens */
+        max-width: 100%;
     }
 }
