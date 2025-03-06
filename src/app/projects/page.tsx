@@ -16,20 +16,18 @@ interface Project {
 export default function Page() {
     return (
         <>
-            <div className="contentContainer">
-                {Object.values(data).reverse().map((project: Project) => (
-                    <ProjectCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.desc}
-                        languages={project.languages}
-                        applications={project.applications}
-                        imageUrl={project.imageUrl}
-                        imageCredit={project.imageCredit}
-                        github={project.githubUrl}
-                    />
-                ))}
-            </div>
+            {Object.values(data).reverse().map((project: Project) => (
+                <ProjectCard
+                    key={project.id}
+                    title={project.title}
+                    description={project.desc}
+                    languages={project.languages}
+                    applications={project.applications}
+                    imageUrl={project.imageUrl}
+                    imageCredit={project.imageCredit}
+                    github={project.githubUrl}
+                />
+            ))}
         </>
     );
 }

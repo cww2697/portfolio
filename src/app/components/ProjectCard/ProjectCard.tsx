@@ -23,8 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     return (
         <>
             <div
-                className={`mb-10 flex flex-col md:flex-row overflow-hidden rounded-lg`}
-
+                className={`mb-10 flex flex-col md:flex-row overflow-hidden rounded-lg p-4 md:p-0`}
             >
                 {imageUrl && (
                     <div className="relative w-full md:w-1/3">
@@ -44,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     </div>
                 )}
                 <div
-                    className={`p-8 sm:p-9 md:p-7 xl:p-9 w-full md:w-2/3 text-left`}
+                    className={`w-full md:w-2/3 text-left ${imageUrl ? 'pl-4' : ''}`}
                 >
                     <h3 className="mb-4 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
                         {title}
