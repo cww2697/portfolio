@@ -1,4 +1,28 @@
 {
+  "8": {
+    "id": 8,
+    "title": "Spark Launcher",
+    "desc": "Spark Launcher is a specialized game launcher application developed in Java and Kotlin, designed to streamline the game launching process. The project provides a customizable interface for managing and launching various games, featuring automatic updates, profile management, and game configuration tools. Built with modern development practices, Spark Launcher offers a seamless gaming experience while maintaining robust security measures and efficient resource management.",
+    "languages": [
+      "Java",
+      "Kotlin"
+    ],
+    "githubUrl": "https://github.com/cww2697/Spark-Launcher",
+    "webUrl": "https://www.canyonwolf.net/projects/spark-launcher"
+  },
+  "7": {
+    "id": 7,
+    "title": "Canyon Wolf Website",
+    "desc": "Canyon Wolf Website is a personal portfolio website built using modern web technologies including Next.js, React, and TypeScript. The site showcases professional experience, technical projects, and development skills through a clean, responsive interface. Features include dynamic project cards, detailed work experience sections, and seamless navigation. The website demonstrates proficiency in front-end development while serving as a comprehensive professional portfolio tailored to gaming.",
+    "languages": [
+      "Typescript",
+      "React",
+      "JavaScript",
+      "Next.js"
+    ],
+    "githubUrl": "https://github.com/cww2697/canyonwolf-web",
+    "webUrl": "https://www.canyonwolf.net"
+  },
   "6": {
     "id": 6,
     "title": "VacuumBreak",
@@ -18,10 +42,7 @@
     "applications": [
       "Google Dialogflow",
       "Actions for Google Assistant"
-    ],
-    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/81d8c209-525e-4a00-9bee-cd2fe15202e0_rw_600.jpg?h=f6ba612bbccb1850d8212f84f49a8778",
-    "imageCredit": "Dialogflow is a registered trademark of Google, Inc.",
-    "githubUrl": "https://github.com/cww2697/Lubbock-Covid-Chatbot"
+    ]
   },
   "4": {
     "id": 4,
@@ -30,7 +51,6 @@
     "applications": [
       "SAMIAM"
     ],
-    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/391b250e-7e10-4f00-9122-2f208802f139_rw_1920.png?h=70a450a8f5983d243c0ca87280f0662f",
     "githubUrl": "https://github.com/cww2697/LA_Traffic_Bayesian_Net"
   },
   "3": {
@@ -40,7 +60,6 @@
     "languages": [
       "Python"
     ],
-    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/8fdaf166-39f0-4667-97e2-88ac0d576312_rw_600.PNG?h=e397342b31b3deb71609929cb0562646",
     "githubUrl": "https://github.com/cww2697/SqueezeIT_AI"
   },
   "2": {
@@ -54,7 +73,6 @@
     "applications":[
       "MKAtoms"
     ],
-    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/78468313-fbb4-4db4-803a-5a859356014d_rw_600.PNG?h=ab6388961a315424be7ec7bf0a78937d",
     "githubUrl": "https://github.com/cww2697/Binary-Solver"
   },
   "1": {
@@ -75,8 +93,6 @@
       "JavaScript",
       "SQL"
     ],
-    "imageUrl": "https://cdn.myportfolio.com/3e57bf7d-00b8-472c-b91f-f9dd4a57a6e6/8707872e-9196-47c6-a633-c08c0cb6cf19_rw_600.png?h=a48f84baaed44bd7296486ba8d55597c",
-    "imageCredit": "Image from mariadb.org",
-    "githubUrl": "https://github.com/cww2697/Annual_Enplanements"
+    "imageCredit": "Image from mariadb.org"
   }
 }

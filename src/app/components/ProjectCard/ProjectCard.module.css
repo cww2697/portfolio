@@ -1,16 +1,136 @@
-.linkStyle {
-    color: var(--link-color);
-}
-
 .card {
-    margin-bottom: 2.5rem; /* mb-10 */
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease-in-out;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: var(--card-background);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 .card:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  border-color: rgba(0,0,0,0.12);
+}
+
+.media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9; /* Consistent thumbnail shape on mobile */
+  background: var(--content-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .media {
+    width: 36%;
+    aspect-ratio: auto;
+    height: 240px; /* Uniform height on desktop for tidy rows */
+    border-right: 1px solid rgba(0,0,0,0.06);
+  }
+}
+.media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center center; /* Ensure the image is visually centered */
+}
+.imageCover { object-fit: cover; }
+.imageContain { object-fit: contain; padding: 12px; }
+.caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.45);
+}
+
+.content {
+  /* Reduce right-side padding to tighten the card's right edge */
+  padding: 20px 10px 20px 20px; /* top right bottom left */
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .content {
+    width: 64%;
+    padding: 22px 12px 22px 24px; /* top right bottom left */
+  }
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.title {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.bodyText {
+  margin: 0 0 16px 0;
+  line-height: 1.65;
+  color: var(--content-text-color);
+}
+
+.sectionTitle {
+  margin: 12px 0 8px 0;
+  font-weight: 600;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  background: rgba(30, 144, 255, 0.12); /* link color tint */
+  color: var(--foreground);
+  border: 1px solid rgba(30, 144, 255, 0.25);
+}
+.chipMuted {
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.linkStyle {
+  color: var(--link-color);
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--background);
+  background: var(--link-color);
+  text-decoration: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  white-space: nowrap;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+@media (min-width: 768px) {
+  .titleRow {
+    margin-bottom: 16px;
+  }
 }

@@ -1,0 +1,5 @@
+.aboutParagraph {
+  margin-bottom: 1rem;
+  color: var(--content-text-color);
+  line-height: 1.6;
+}

@@ -19,6 +19,7 @@
     --nav-footer-active: #1E90FF;
     --content-text-color: #ededed;
     --link-color: #1E90FF;
+    --card-background: #242424; /* Slightly lighter than page bg to stand out */
   }
 }
 
@@ -32,6 +33,7 @@
     --nav-footer-active: #1E90FF; /* Keeping the active color the same */
     --content-text-color: #333; /* Dark text color */
     --link-color: #1E90FF;
+    --card-background: #ffffff; /* White cards on light gray page */
   }
 }
 
@@ -71,5 +73,21 @@ p {
   /* Adjust this value based on your mobile breakpoint */
   .contentContainer {
     width: 97%;
+  }
+}
+
+/* Shared section block for consistent sectionization across pages */
+.section {
+  background-color: var(--card-background);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  padding: 20px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 24px;
+    margin-top: 20px;
   }
 }

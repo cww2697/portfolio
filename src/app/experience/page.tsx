@@ -17,19 +17,24 @@ export default function Page() {
     return (
         <>
             <div className="contentContainer">
-                {Object.values(data).reverse().map((experience: Experience) => (
-                    <ExperienceListItem
-                        key={experience.id}
-                        position={experience.position}
-                        company={experience.company}
-                        city={experience.city}
-                        state={experience.state}
-                        descLine1={experience.descLine1}
-                        descLine2={experience.descLine2}
-                        startDate={experience.startDate}
-                        endDate={experience.endDate}
-                    />
-                ))}
+                <div className="pageTitle">
+                    <h1>Experience</h1>
+                </div>
+                <section className="section">
+                    {Object.values(data).reverse().map((experience: Experience) => (
+                        <ExperienceListItem
+                            key={experience.id}
+                            position={experience.position}
+                            company={experience.company}
+                            city={experience.city}
+                            state={experience.state}
+                            descLine1={experience.descLine1}
+                            descLine2={experience.descLine2}
+                            startDate={experience.startDate}
+                            endDate={experience.endDate}
+                        />
+                    ))}
+                </section>
             </div>
         </>
     );

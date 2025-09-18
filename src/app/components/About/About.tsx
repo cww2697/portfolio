@@ -10,7 +10,7 @@ const About = () => {
             <div className="pageTitle">
                 <h1>About Me!</h1>
             </div>
-            <section className={styles.intro}>
+            <section className={`section ${styles.intro}`}>
                 <div className={styles.imageColumn}>
                     <Image src={data.imageUrl} alt={"Profile Image"} width={800} height={800} className={styles.image}/>
                 </div>
