@@ -1,4 +1,17 @@
 {
+  "9": {
+    "id": 9,
+    "title": "LoopFi",
+    "desc": "LoopFi is a command-line interface application built with Java and Spring Shell for managing personal finances. It offers comprehensive features including multi-account transaction management, detailed reporting, and spending analysis tools while providing an intuitive and streamlined user experience.",
+    "languages": [
+      "Java",
+      "SQL"
+    ],
+    "applications": [
+      "Spring Boot",
+      "Spring Shell"
+    ]
+  },
   "8": {
     "id": 8,
     "title": "Spark Launcher",
