@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { library, config } from '@fortawesome/fontawesome-svg-core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Footer.module.css";
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -56,7 +57,7 @@ const Footer = () => {
                 <button type="button" onClick={toggleTheme} className={styles.themeToggle} aria-label="Toggle dark mode">
                     <span aria-hidden="true" className={styles.switch}>
                         <span className={`${styles.knob} ${theme === 'dark' ? styles.knobOn : ''}`}>
-                            <FontAwesomeIcon icon={theme === 'dark' ? faMoon : faSun} />
+                            <FontAwesomeIcon icon={theme === 'dark' ? faMoon as IconProp : faSun as IconProp} />
                         </span>
                     </span>
                 </button>
