@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Footer.module.css";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
-// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 library.add(faGithub, faLinkedin, faMoon, faSun);
 config.autoAddCss = false;
 
