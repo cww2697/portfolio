@@ -134,16 +134,15 @@ const ScrollArea: React.FC<ScrollAreaProps> = ({ children, topOffset = 100, bott
     window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove as any);
-      window.removeEventListener("mouseup", handleMouseUp as any);
-      window.removeEventListener("touchmove", handleTouchMove as any);
-      window.removeEventListener("touchend", handleTouchEnd as any);
+      window.removeEventListener("mousemove", handleMouseMove as never);
+      window.removeEventListener("mouseup", handleMouseUp as never);
+      window.removeEventListener("touchmove", handleTouchMove as never);
+      window.removeEventListener("touchend", handleTouchEnd as never);
     };
   }, [doDrag, endDrag]);
 
   return (
     <div className="relative" style={heightStyle}>
-      {/* Scrollable content with hidden native scrollbar */}
       <div
         ref={containerRef}
         onScroll={onScroll}
@@ -152,18 +151,17 @@ const ScrollArea: React.FC<ScrollAreaProps> = ({ children, topOffset = 100, bott
         {children}
       </div>
 
-      {/* Custom scrollbar aligned to the window edge */}
       {isScrollable && (
         <div
-          className="fixed right-0"
-          style={{ top: topOffset, bottom: bottomOffset, width: 8, zIndex: 10 }}
+          className="fixed"
+          style={{ top: topOffset, bottom: bottomOffset, right: 4, width: 8, zIndex: 10 }}
           aria-hidden="true"
         >
           <div className="relative h-full w-full">
             <div
               role="scrollbar"
               aria-orientation="vertical"
-              className="absolute left-0 right-0 rounded-full bg-white/40 hover:bg-white/60 transition-colors cursor-pointer"
+              className="absolute left-0 right-0 rounded-full transition-colors cursor-pointer bg-gray-500/70 hover:bg-gray-600 dark:bg-white/40 dark:hover:bg-white/60"
               style={{ height: thumbHeight, top: thumbTop }}
               onMouseDown={(e) => startDrag(e.clientY)}
               onTouchStart={(e) => startDrag(e.touches[0].clientY)}

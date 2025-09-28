@@ -19,22 +19,20 @@ const Footer = () => {
         return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     }, []);
 
-    const [theme, setTheme] = useState<Theme | null>(null); // null means "system"
+    const [theme, setTheme] = useState<Theme | null>(null);
 
-    // Initialize from localStorage or system preference (for UI state only when system)
     useEffect(() => {
         const stored = typeof window !== 'undefined' ? (localStorage.getItem('theme') as Theme | null) : null;
         if (stored === 'light' || stored === 'dark') {
             setTheme(stored);
             document.documentElement.setAttribute('data-theme', stored);
         } else {
-            setTheme(prefersDark ? 'dark' : 'light'); // reflect current system in UI, but don't set attribute
+            setTheme(prefersDark ? 'dark' : 'light');
             document.documentElement.removeAttribute('data-theme');
         }
     }, [prefersDark]);
 
     const toggleTheme = () => {
-        // Determine current effective theme
         const currentIsDark = theme === 'dark';
         const next: Theme = currentIsDark ? 'light' : 'dark';
         setTheme(next);
