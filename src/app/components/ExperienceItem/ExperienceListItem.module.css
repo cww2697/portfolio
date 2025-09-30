@@ -1,25 +1,49 @@
 .experienceItemContainer {
-    padding: 0 20px 32px 20px;
-}
-.experienceItemContainer h1{
-    font-size: 1.5em;
-    font-weight: bold;
+    padding: 0;
 }
 
-.companyInfoContainer{
-    display: inline-block;
-    padding-bottom: 10px;
+.experienceItemContainer h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--content-text-color);
+    margin: 0 0 4px 0;
 }
+
+.companyInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    align-items: baseline;
+    padding-bottom: 8px;
+    color: var(--content-text-color);
+}
+
 .companyInfoContainer h2 {
-    display: inline-block;
-    padding-inline-end: 16px;
-    font-size: 1.15em
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
 }
+
 .companyInfoContainer h3 {
-    font-size: 1.05em;
+    font-size: 0.95rem;
     font-style: italic;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.experienceItemContainer hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 12px 0;
+    opacity: 0.6;
+}
+@media (prefers-color-scheme: dark) {
+    .experienceItemContainer hr { border-top-color: rgba(255,255,255,0.12); opacity: 0.4; }
 }
 
 .experienceItemContainer p {
-    padding-top: 16px
+    line-height: 1.7;
+}
+.experienceItemContainer p + p {
+    margin-top: 10px;
 }

@@ -19,7 +19,6 @@ interface Project {
 export default function Page() {
     const projects: Project[] = useMemo(() => Object.values(data).reverse() as Project[], []);
 
-    // Build unique option lists
     const allLanguages = useMemo(() => {
         const set = new Set<string>();
         projects.forEach(p => p.languages?.forEach(l => set.add(l)));
@@ -32,7 +31,6 @@ export default function Page() {
         return Array.from(set).sort((a, b) => a.localeCompare(b));
     }, [projects]);
 
-    // Filter state
     const [showFilters, setShowFilters] = useState<boolean>(false);
     const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
     const [selectedTools, setSelectedTools] = useState<string[]>([]);
@@ -66,9 +64,8 @@ export default function Page() {
         });
     }, [projects, selectedLanguages, selectedTools, hasGithub, hasWebsite]);
 
-    // Chip styles
     const chipBase = "inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium border transition select-none cursor-pointer";
-    const chipSelected = "bg-blue-600 text-white border-blue-600 shadow";
+    const chipSelected = "bg-teal-600 text-white border-teal-600 shadow";
     const chipUnselected = "bg-white text-gray-800 border-gray-300 hover:bg-gray-50 dark:bg-white/5 dark:text-white/80 dark:border-white/20 dark:hover:bg-white/10";
 
     return (
@@ -79,7 +76,6 @@ export default function Page() {
                     <h1>Projects</h1>
                 </div>
 
-                {/* Filters Section */}
                 <div className="mt-4">
                     <button
                         type="button"
@@ -124,7 +120,6 @@ export default function Page() {
                                 </div>
                             )}
 
-                            {/* Tools */}
                             {allTools.length > 0 && (
                                 <div>
                                     <div className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-700 dark:text-white/70">Tools</div>
@@ -147,7 +142,6 @@ export default function Page() {
                                 </div>
                             )}
 
-                            {/* Toggles */}
                             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                                 <label className="flex items-center justify-between gap-3 rounded-lg border p-3 bg-white border-gray-300 dark:border-white/10 dark:bg-white/5">
                                     <span className="font-medium text-gray-800 dark:text-white">Has GitHub</span>
@@ -158,7 +152,7 @@ export default function Page() {
                                             onChange={(e) => setHasGithub(e.target.checked)}
                                             className="sr-only"
                                         />
-                                        <span className={`h-6 w-10 rounded-full transition ${hasGithub ? "bg-blue-600" : "bg-gray-300 dark:bg-white/20"}`}></span>
+                                        <span className={`h-6 w-10 rounded-full transition ${hasGithub ? "bg-teal-600" : "bg-gray-300 dark:bg-white/20"}`}></span>
                                         <span className={`absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white transition-transform ${hasGithub ? "translate-x-4" : "translate-x-0"}`}></span>
                                     </span>
                                 </label>
@@ -172,13 +166,12 @@ export default function Page() {
                                             onChange={(e) => setHasWebsite(e.target.checked)}
                                             className="sr-only"
                                         />
-                                        <span className={`h-6 w-10 rounded-full transition ${hasWebsite ? "bg-blue-600" : "bg-gray-300 dark:bg-white/20"}`}></span>
+                                        <span className={`h-6 w-10 rounded-full transition ${hasWebsite ? "bg-teal-600" : "bg-gray-300 dark:bg-white/20"}`}></span>
                                         <span className={`absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white transition-transform ${hasWebsite ? "translate-x-4" : "translate-x-0"}`}></span>
                                     </span>
                                 </label>
                             </div>
 
-                            {/* Reset */}
                             <div className="flex justify-end">
                                 <button
                                     type="button"
@@ -192,7 +185,6 @@ export default function Page() {
                     )}
                 </div>
 
-                {/* Projects Grid */}
                 <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
                     {filteredProjects.map((project: Project) => (
                         <ProjectCard

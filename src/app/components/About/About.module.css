@@ -1,7 +1,11 @@
 .intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 32px;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(20,184,166,0.08), rgba(236,72,153,0.08));
+    padding: 32px;
+    border-radius: 16px;
 }
 
 .imageColumn {
@@ -11,16 +15,31 @@
 }
 
 .image {
-    max-width: 50%;
-    height: auto;
-    border-radius: 8px;
+    width: 320px;
+    max-width: 80%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 9999px; /* fully rounded */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    border: 4px solid rgba(255,255,255,0.5);
 }
 
 .textColumn {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 16px;
     color: var(--content-text-color);
+}
+
+.card {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .textColumn h1, .textColumn p {
@@ -36,12 +55,23 @@
     text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .intro {
         grid-template-columns: 1fr;
+        padding: 24px;
     }
 
     .image {
+        width: 260px;
+        height: 260px;
         max-width: 100%;
     }
+}
+
+.tagline {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--content-text-color);
+    opacity: 0.85;
 }

@@ -22,6 +22,7 @@ const Footer = () => {
     }, []);
 
     const [theme, setTheme] = useState<Theme | null>(null);
+    const year = useMemo(() => new Date().getFullYear(), []);
 
     useEffect(() => {
         const stored = typeof window !== 'undefined' ? (localStorage.getItem('theme') as Theme | null) : null;
@@ -45,6 +46,9 @@ const Footer = () => {
 
     return (
         <footer className={styles.footer}>
+            <div className={styles.footerCopyright}>
+                <span className={styles.copyText}>© {year} Cody West</span>
+            </div>
             <div className={styles.footerLeft}>
                 <a href="https://github.com/cww2697" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <FontAwesomeIcon icon={faGithub} size="2x" />

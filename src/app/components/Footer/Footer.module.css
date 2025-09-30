@@ -28,6 +28,23 @@
     right: 1rem;
 }
 
+/* New: Copyright at bottom-left */
+.footerCopyright {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.copyText {
+    font-size: 0.85rem;
+    color: var(--foreground);
+    opacity: 0.8;
+    white-space: nowrap;
+}
+
 .themeToggle {
     display: inline-flex;
     align-items: center;

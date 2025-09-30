@@ -18,7 +18,7 @@
 .media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9; /* Consistent thumbnail shape on mobile */
+  aspect-ratio: 16/9;
   background: var(--content-background);
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@
   .media {
     width: 36%;
     aspect-ratio: auto;
-    height: 240px; /* Uniform height on desktop for tidy rows */
+    height: 240px;
     border-right: 1px solid rgba(0,0,0,0.06);
   }
 }
@@ -37,7 +37,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-position: center center; /* Ensure the image is visually centered */
+  object-position: center center;
 }
 .imageCover { object-fit: cover; }
 .imageContain { object-fit: contain; padding: 12px; }
@@ -54,14 +54,13 @@
 }
 
 .content {
-  /* Reduce right-side padding to tighten the card's right edge */
-  padding: 20px 10px 20px 20px; /* top right bottom left */
+  padding: 20px 10px 20px 20px;
   width: 100%;
 }
 @media (min-width: 768px) {
   .content {
     width: 64%;
-    padding: 22px 12px 22px 24px; /* top right bottom left */
+    padding: 22px 12px 22px 24px;
   }
 }
 
@@ -98,7 +97,7 @@
   padding: 4px 10px;
   font-size: 0.85rem;
   border-radius: 999px;
-  background: rgba(30, 144, 255, 0.12); /* link color tint */
+  background: rgba(30, 144, 255, 0.12);
   color: var(--foreground);
   border: 1px solid rgba(30, 144, 255, 0.25);
 }
@@ -129,6 +128,22 @@
   opacity: 0.9;
   transform: translateY(-1px);
 }
+
+/* Improve contrast for buttons in explicit light theme and system light mode */
+html[data-theme="light"] .button {
+  background: #0f766e; /* teal-700 for AA contrast */
+  color: #ffffff;
+}
+@media (prefers-color-scheme: light) {
+  .button {
+    background: #0f766e; /* teal-700 for AA contrast */
+    color: #ffffff;
+  }
+  .button:hover {
+    opacity: 0.95;
+  }
+}
+
 @media (min-width: 768px) {
   .titleRow {
     margin-bottom: 16px;
