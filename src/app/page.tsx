@@ -1,12 +1,5 @@
-import "./globals.css";
-import About from "@/app/components/About/About";
+import AboutSection from "@/app/components/AboutSection";
 
 export default function Home() {
-  return (
-    <>
-        <div className="contentContainer">
-            <About />
-        </div>
-    </>
-  );
+  return <AboutSection />;
 }

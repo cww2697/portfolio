@@ -1,9 +1,0 @@
-.aboutParagraph {
-  color: var(--content-text-color);
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
-
-.aboutParagraph:not(:last-child) {
-  margin-bottom: 0.75rem;
-}
