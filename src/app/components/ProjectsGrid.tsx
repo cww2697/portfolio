@@ -3,6 +3,9 @@
 import React, { useState, useMemo } from 'react';
 import GlassContainer from './GlassContainer';
 import projectData from '../values/project.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 interface Project {
   id: number;
@@ -122,9 +125,10 @@ const ProjectsGrid = () => {
                     href={project.githubUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-sm font-medium hover:text-[var(--accent)] transition-colors flex items-center gap-1"
+                    className="text-sm font-medium hover:text-[var(--accent)] transition-colors flex items-center gap-2"
                   >
-                    GitHub →
+                    <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />
+                    GitHub
                   </a>
                 )}
                 {project.webUrl && (
@@ -132,9 +136,10 @@ const ProjectsGrid = () => {
                     href={project.webUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-sm font-medium hover:text-[var(--accent)] transition-colors flex items-center gap-1"
+                    className="text-sm font-medium hover:text-[var(--accent)] transition-colors flex items-center gap-2"
                   >
-                    Website →
+                    <FontAwesomeIcon icon={faExternalLinkAlt} className="w-4 h-4" />
+                    Website
                   </a>
                 )}
               </div>
