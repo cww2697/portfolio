@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './About.module.css';
 import Image from "next/image";
-import AboutDetails from "@/app/components/AboutDetails/AboutDetails";
+import GlassContainer from "./GlassContainer";
 
 const About = () => {
     const imageUrl = "https://avatars.githubusercontent.com/u/19256987?s=800&v=4";
@@ -13,24 +12,35 @@ const About = () => {
     ];
 
     return (
-        <>
-            <div className="pageTitle">
-                <h1>Cody West</h1>
-                <p className={styles.tagline}>Full Stack Software Engineer & Team Leader crafting secure, scalable web apps with React, Next.js, PHP, and SQL.</p>
-            </div>
-            <section className={`section ${styles.intro}`}>
-                <div className={styles.imageColumn}>
-                    <Image src={imageUrl} alt={"Profile Image"} width={800} height={800} className={styles.image}/>
+        <div className="space-y-12">
+            <header className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[var(--accent)] to-purple-500 blur-2xl opacity-20 animate-pulse"></div>
+                    <Image 
+                        src={imageUrl} 
+                        alt="Cody West" 
+                        fill 
+                        className="rounded-full object-cover border-4 border-[var(--glass-border)] shadow-xl relative z-10"
+                    />
                 </div>
-                <div className={styles.textColumn}>
-                    <div className="section">
-                        {details.map((detail, index) => (
-                            <AboutDetails key={index} detailsText={detail} />
-                        ))}
-                    </div>
+                <div className="text-center md:text-left">
+                    <h1 className="text-4xl md:text-6xl mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[var(--foreground)] to-[var(--accent)]">
+                        Cody West
+                    </h1>
+                    <p className="text-xl md:text-2xl text-[var(--foreground)] opacity-80 max-w-2xl">
+                        Full Stack Software Engineer & Team Leader crafting secure, scalable web apps.
+                    </p>
                 </div>
+            </header>
+
+            <section className="grid gap-6">
+                <GlassContainer>
+                    {details.map((detail, index) => (
+                        <p key={index} className="text-lg leading-relaxed opacity-90 mb-4 last:mb-0">{detail}</p>
+                    ))}
+                </GlassContainer>
             </section>
-        </>
+        </div>
     );
 };
 

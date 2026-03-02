@@ -1,46 +1,17 @@
-import data from "../values/experience.json";
-import ExperienceListItem from "@/app/components/ExperienceItem/ExperienceListItem";
-import ScrollArea from "@/app/components/ScrollArea/ScrollArea";
+import ExperienceTimeline from "@/app/components/ExperienceTimeline";
 
-export default function Page() {
-    interface Experience {
-        id: number;
-        position: string;
-        company?: string;
-        city: string;
-        state: string;
-        descLine1: string;
-        descLine2?: string
-        startDate: string;
-        endDate: string;
-    }
-
-    return (
-        <>
-            <div className="contentContainer">
-                <ScrollArea topOffset={100} bottomOffset={75}>
-                    <div className="pageTitle">
-                        <h1>Experience</h1>
-                    </div>
-
-                    <div className="mt-6 grid grid-cols-1 gap-6">
-                        {Object.values(data).reverse().map((experience: Experience) => (
-                            <div key={experience.id} className="section">
-                                <ExperienceListItem
-                                    position={experience.position}
-                                    company={experience.company}
-                                    city={experience.city}
-                                    state={experience.state}
-                                    descLine1={experience.descLine1}
-                                    descLine2={experience.descLine2}
-                                    startDate={experience.startDate}
-                                    endDate={experience.endDate}
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </ScrollArea>
-            </div>
-        </>
-    );
+export default function ExperiencePage() {
+  return (
+    <div className="space-y-12">
+        <header className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--foreground)] to-[var(--accent)] mb-4">
+                Professional Experience
+            </h1>
+            <p className="text-[var(--foreground)] opacity-70 max-w-2xl mx-auto">
+                My professional journey as a software developer and team leader, focusing on scalable web applications and technical leadership.
+            </p>
+        </header>
+        <ExperienceTimeline />
+    </div>
+  );
 }
