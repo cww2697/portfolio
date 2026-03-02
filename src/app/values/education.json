@@ -1,0 +1,22 @@
+{
+  "0": {
+    "id": 0,
+    "institution": "Texas Tech University",
+    "degree": "Bachelor of Science - Computer Science",
+    "city": "Lubbock",
+    "state": "TX",
+    "descLine1": "Gained a strong foundation in software engineering, algorithms, and database systems. Participated in various projects involving AI and Operating Systems.",
+    "startDate": "August 2016",
+    "endDate": "December 2020"
+  },
+  "1": {
+    "id": 1,
+    "institution": "University of Oklahoma",
+    "degree": "Master of Science - Data Science and Analytics",
+    "city": "Norman",
+    "state": "OK",
+    "descLine1": "Developed and deployed machine learning models for predictive analytics and data visualization. Collaborated with cross-functional teams to optimize data pipelines and improve operational efficiency.",
+    "startDate": "January 2026",
+    "endDate": "Present"
+  }
+}
