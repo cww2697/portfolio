@@ -34,11 +34,11 @@ const About = () => {
             </header>
 
             <section className="grid gap-6">
-                {details.map((detail, index) => (
-                    <GlassContainer key={index}>
-                        <p className="text-lg leading-relaxed opacity-90">{detail}</p>
-                    </GlassContainer>
-                ))}
+                <GlassContainer>
+                    {details.map((detail, index) => (
+                        <p key={index} className="text-lg leading-relaxed opacity-90 mb-4 last:mb-0">{detail}</p>
+                    ))}
+                </GlassContainer>
             </section>
         </div>
     );
