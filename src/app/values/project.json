@@ -7,15 +7,15 @@
       "Java",
       "Kotlin",
       "Swift",
-      "HTML"
-      "JavaScript"
+      "HTML",
+      "JavaScript",
       "CSS"
     ],
     "applications": [
       "Spring Boot",
       "Android Studio",
       "Xcode",
-      "InteliJ"
+      "InteliJ",
       "Jenkins"
     ]
   },
