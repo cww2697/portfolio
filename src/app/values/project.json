@@ -1,4 +1,24 @@
 {
+  "12": {
+    "id": 12,
+    "title": "Droplyx",
+    "desc": "Droplyx is a next‑generation social platform built for music festival communities, designed to make every event more connected, memorable, and effortless. As a standalone web and mobile experience, it blends real‑time location sharing, smart meet‑ups, and community‑driven discovery into one seamless ecosystem. With a custom-built backend and a lightweight, festival‑optimized client, Droplyx synchronizes live data across users to help friends find each other, form new connections, and navigate crowded festival environments with ease.",
+    "languages": [
+      "Java",
+      "Kotlin",
+      "Swift",
+      "HTML"
+      "JavaScript"
+      "CSS"
+    ],
+    "applications": [
+      "Spring Boot",
+      "Android Studio",
+      "Xcode",
+      "InteliJ"
+      "Jenkins"
+    ]
+  },
   "11": {
     "id": 11,
     "title": "FS Nitro",
